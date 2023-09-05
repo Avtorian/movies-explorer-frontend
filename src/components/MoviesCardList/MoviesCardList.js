@@ -1,10 +1,12 @@
 import React from "react";
 import './MoviesCardList.css';
 import MovieCard from "../MoviesCard/MoviesCard";
+import { useLocation } from "react-router-dom";
 export default function MoviesCardList(props) {
+  const urlLocation = useLocation();
   return (
-    <>
-      <ul className="movies-card-list">
+    <section className="movies-card-list">
+      <ul className="movies-card-list__cards">
         <MovieCard saved={true} src="https://i.imgur.com/n2mb5mg.png" nameRU="33 слова о дизайне" duration="1ч 17м" />
         <MovieCard saved={true} src="https://i.imgur.com/L3cgPzW.png" nameRU="Киноальманах «100 лет дизайна»" duration="1ч 17м" />
         <MovieCard saved={true} src="https://i.imgur.com/lfxxzSL.png" nameRU="В погоне за Бенкси" duration="1ч 17м" />
@@ -18,9 +20,15 @@ export default function MoviesCardList(props) {
         <MovieCard src="https://i.imgur.com/PkrUqbv.png" nameRU="Пи Джей Харви: A dog called money" duration="1ч 17м" />
         <MovieCard src="https://i.imgur.com/xdh7hnd.png" nameRU="По волнам: Искусство звука в кино" duration="1ч 17м" />
       </ul>
-      <div className="movies-card-list__container">
-        <button className="movies-card-list__more-btn movies-card-list__more-btn_active">Еще</button>
-      </div>
-    </>
+      {urlLocation.pathname === "/movies" ?
+        <div className="movies-card-list__container movies-card-list__container_type_movies">
+          <button className="movies-card-list__more-btn">Еще</button>
+        </div>
+        : ""}
+      {urlLocation.pathname === "/saved-movies" ?
+        <div className="movies-card-list__container movies-card-list__container_type_saved-movies">
+        </div>
+        : ""}
+    </section>
   )
 }

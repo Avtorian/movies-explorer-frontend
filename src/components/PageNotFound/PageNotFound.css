@@ -46,7 +46,10 @@
     background-color: inherit;
     border: 0;
 }
-
+.page-not-found__exit-btn:hover {
+    opacity: .7;
+    cursor: pointer;
+}
 @media (max-width: 925px) {
     .page-not-found {
         padding-top: 408px;
@@ -69,5 +72,6 @@
 
     .page-not-found__exit-btn {
         margin-top: 284px;
+        font-size: 12px;
     }
 }

@@ -1,11 +1,25 @@
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation_type_outside {
+    grid-column-start: 3;
+    justify-self: end;
+    align-self: center;
+}
+
 .navigation__links {
     margin: 0;
     padding: 0;
-    justify-self: end;
-    align-self: center;
     display: flex;
     align-items: center;
+}
+
+.navigation_type_inside {
     grid-column-start: 3;
+    justify-self: end;
+    align-self: center;
 }
 
 .navigation__link {
@@ -21,7 +35,7 @@
     padding: 0 0 0 30px;
 }
 
-.navigation_link-signup {
+.navigation__link-signup {
     color: #FFF;
     text-align: right;
     font-family: "Inter";
@@ -32,7 +46,7 @@
     text-decoration: none;
 }
 
-.navigation_link-signin {
+.navigation__link-signin {
     color: black;
     padding: 8px 20px;
     background-color: rgba(61, 220, 132, 1);
@@ -46,13 +60,16 @@
     display: block;
 }
 
-.navigation__menu {
+.navigation_type_page {
     margin: 0 auto;
-    padding: 0; 
+}
+
+.navigation__menu {
+    padding: 0;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .navigation__menu-item {
@@ -83,10 +100,10 @@
     font-weight: 500;
 }
 
-.navigation_link-account {
+.navigation__link-account {
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+    font-family: "Inter";
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -98,11 +115,11 @@
 }
 
 @media (max-width: 925px) {
-    .navigation__menu {
+    .navigation_type_page {
         display: none;
     }
 
-    .navigation__links {
+    .navigation_type_inside {
         display: none;
     }
 
@@ -112,15 +129,17 @@
 }
 
 @media (max-width: 556px) {
-    .navigation_link-signup{
+    .navigation__link-signup {
         font-size: 10px;
     }
-    .navigation_link-signin {
+
+    .navigation__link-signin {
         color: black;
         padding: 7px 12px;
         font-size: 10px;
     }
-    .navigation__link:not(:first-child){
+
+    .navigation__link:not(:first-child) {
         padding-left: 14px;
     }
 }

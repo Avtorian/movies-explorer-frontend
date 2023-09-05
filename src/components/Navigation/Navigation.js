@@ -7,22 +7,27 @@ export default function Navigation(props) {
   return (
     <>
       {!props.loggedIn &&
-        <ul className="navigation__links navigation__links_active">
-          <li className="navigation__link"><Link to="/signup" className='navigation_link-signup'>Регистриция</Link></li>
-          <li className="navigation__link"><Link to="/signin" className='navigation_link-signin'>Войти</Link></li>
-        </ul>
+        <nav className="navigation navigation_type_outside">
+          <ul className="navigation__links navigation__links_active">
+            <li className="navigation__link"><Link to="/signup" className='navigation__link-signup'>Регистриция</Link></li>
+            <li className="navigation__link"><Link to="/signin" className='navigation__link-signin'>Войти</Link></li>
+          </ul>
+        </nav>
       }
       {props.loggedIn &&
         <>
           <Burger />
-          <ul className="navigation__menu">
-            <li className="navigation__menu-item"><NavLink to="/movies" className={urlLocation.pathname === "/movies" ? "navigation__menu-link navigation__menu-link_active" : "navigation__menu-link"}>Фильмы</NavLink></li>
-            <li className="navigation__menu-item"><NavLink to="/saved-movies" className={urlLocation.pathname === "/saved-movies" ? "navigation__menu-link navigation__menu-link_active" : "navigation__menu-link"}>Сохранённые фильмы</NavLink></li>
-          </ul>
-
-          <ul className="navigation__links">
-            <li className="navigation__link"><Link to="/profile" className='navigation_link-account'>Аккаунт</Link></li>
-          </ul>
+          <nav className="navigation navigation_type_page">
+            <ul className="navigation__menu">
+              <li className="navigation__menu-item"><NavLink to="/movies" className={urlLocation.pathname === "/movies" ? "navigation__menu-link navigation__menu-link_active" : "navigation__menu-link"}>Фильмы</NavLink></li>
+              <li className="navigation__menu-item"><NavLink to="/saved-movies" className={urlLocation.pathname === "/saved-movies" ? "navigation__menu-link navigation__menu-link_active" : "navigation__menu-link"}>Сохранённые фильмы</NavLink></li>
+            </ul>
+          </nav>
+          <nav className="navigation navigation_type_inside">
+            <ul className="navigation__links">
+              <li className="navigation__link"><Link to="/profile" className='navigation__link-account'>Аккаунт</Link></li>
+            </ul>
+          </nav>
         </>
       }
 

@@ -82,9 +82,15 @@
     line-height: normal;
 }
 
-.profile__submit-btn {
+.profile__edit-container {
     width: 100%;
     margin-top: 215px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile__edit-btn {
     color: #FFF;
     text-align: center;
     font-family: "Inter";
@@ -96,7 +102,7 @@
     border: 0;
 }
 
-.profile__submit-btn:hover {
+.profile__edit-btn:hover {
     opacity: .7;
     cursor: pointer;
 }
@@ -118,16 +124,52 @@
     opacity: .7;
     cursor: pointer;
 }
+.profile__submit-container{
+    padding-top: 184px;
+}
+.profile__submit-error {
+    display: block;
+    color: #FF004C;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    min-height: 14px;
+}
+
+.profile__submit-btn {
+    border-radius: 3px;
+    background-color: #F8F8F8;
+    padding: 13px 0;
+    color: #C2C2C2;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: 0;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.profile__submit-btn_active {
+    background-color: #3456F3;
+    color: #FFF;
+}
 
 @media (max-width: 925px) {
     .profile__form {
-        padding-top: 233px;
+        padding-top: 231px;
     }
 
     .profile__container {
         padding-top: 96px;
     }
-    .profile__submit-btn{
+
+    .profile__edit-container {
         margin-top: 203px;
     }
 }
@@ -138,17 +180,21 @@
     }
 
     .profile__form {
-        padding-top: 69px;
+        padding-top: 66px;
     }
 
     .profile__container {
         padding-top: 80px;
     }
+
     .profile__container:not(:first-of-type) {
         margin-top: 10px;
     }
-    .profile__submit-btn {
+
+    .profile__edit-container {
         margin-top: 373px;
+    }
+    .profile__edit-btn{
         font-size: 12px;
     }
 

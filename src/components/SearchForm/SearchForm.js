@@ -17,7 +17,6 @@ export default function SearchForm(props) {
           <button className="search-form__submit-btn" type="submit"></button>
         </form>
         <FilterCheckbox/>
-        <div className="search-form__line"></div>
       </section>
     </>
   )

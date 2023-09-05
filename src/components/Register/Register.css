@@ -10,6 +10,11 @@
     height: 38px;
 }
 
+.register__logo:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
 .register__title {
     width: 100%;
     margin: 37px 0 0 0;
@@ -108,6 +113,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    text-decoration: none;
 }
 
 .register__entry:hover {
@@ -150,6 +156,9 @@
         padding-left: 0;
         padding-right: 0;
         font-size: 12px
+    }
+    .register__error{
+        max-width: none;
     }
 
     .register__text {

@@ -1,0 +1,186 @@
+.burger__open-btn {
+    display: none;
+    background-image: url("../../images/burger_1.svg");
+    width: 44px;
+    height: 44px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: inherit;
+    border: 0;    
+    grid-column-start: 3;
+    justify-self: end;
+}
+
+.burger__container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.burger__container_open {
+    display: block;
+}
+
+.burger__navigation {
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    top: 0;
+    background-color: #202020;
+    max-width: 520px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 0 0 auto;
+}
+
+.burger__close-btn {
+    background-image: url("../../images/burger_2.svg");
+    width: 32px;
+    height: 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: inherit;
+    border: 0;
+    display: block;
+    margin: 22px 22px 0 auto;
+}
+
+.burger__links {
+    max-width: 100px;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    margin: 628px auto 0 auto;
+}
+
+.burger__link {
+    list-style: none;
+}
+
+.burger__link:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.burger__link:not(:first-child) {
+    padding: 0 0 0 30px;
+}
+
+.burger_link-signup {
+    color: #FFF;
+    text-align: right;
+    font-family: "Inter";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.burger_link-signin {
+    color: black;
+    padding: 8px 20px;
+    background-color: rgba(61, 220, 132, 1);
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+
+}
+
+.burger__menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 105px;
+
+}
+
+.burger__menu-item {
+    list-style: none;
+}
+
+.burger__menu-item:not(:first-of-type) {
+    padding-top: 29px;
+}
+
+.burger__menu-item:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.burger__menu-link {
+    color: #FFF;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.burger__menu-link_active {
+    font-weight: 500;
+    text-decoration: underline solid 2px #FFF;
+    text-underline-offset: 8px;
+}
+
+.burger_link-account {
+    color: #FFF;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    background-color: rgba(49, 49, 49, 1);
+    border-radius: 20px;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 925px) {
+    .burger__open-btn {
+        display: block;
+    }
+}
+
+@media (max-width: 556px) {
+    .burger__menu{
+        padding-top: 100px;
+    }
+    .burger__menu-link_active {
+        text-underline-offset: 10px;
+    }
+
+    .burger__open-btn {
+        width: 40px;
+        height: 43px;
+    }
+    .burger__close-btn{
+        margin-right: 14px;
+        margin-top: 14px;
+    }
+    .burger__menu-item:not(:first-of-type){
+        padding-top: 25px;
+    }
+    .burger__links{
+        margin-top: 450px;
+    }
+}

@@ -1,0 +1,162 @@
+.register {
+    max-width: 396px;
+    width: 100%;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+
+.register__logo {
+    width: 38px;
+    height: 38px;
+}
+
+.register__title {
+    width: 100%;
+    margin: 37px 0 0 0;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.register__label {
+    margin-top: 40px;
+    width: 100%;
+    color: #8B8B8B;
+    font-family: "Inter";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: inline-block;
+}
+
+.register__label:not(:first-of-type) {
+    margin-top: 18px;
+}
+
+.register__input-text {
+    box-sizing: border-box;
+    padding: 15px;
+    border: 0;
+    margin-top: 10px;
+    width: 100%;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #2F2F2F;
+    border-radius: 8px;
+}
+
+.register__error {
+    max-width: 100px;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    color: #EE3465;
+    font-family: "Inter";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.register__submit-btn {
+    border: 0;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background-color: #4285F4;
+    border-radius: 3px;
+    padding: 15px 125px;
+    margin-top: 70px;
+}
+
+.register__submit-btn:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.register__text {
+    padding-top: 16px;
+    margin: 0 auto;
+    color: #8B8B8B;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.register__entry {
+    padding-left: 3px;
+    color: #4285F4;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.register__entry:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+@media (max-width: 925px) {
+    .register {
+        padding-top: 232px;
+    }
+
+    .register__submit-btn {
+        margin-top: 69px;
+    }
+}
+
+@media (max-width: 556px) {
+    .register {
+        padding-top: 56px;
+        max-width: 260px;
+    }
+
+    .register__logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .register__title {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .register__label {
+        margin-top: 80px;
+    }
+
+    .register__submit-btn {
+        margin-top: 157px;
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 12px
+    }
+
+    .register__text {
+        font-size: 12px;
+    }
+
+    .register__entry {
+        font-size: 12px;
+    }
+}

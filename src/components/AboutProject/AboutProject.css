@@ -1,0 +1,184 @@
+.about-project {
+    width: 100%;
+    margin-top: 110px;
+}
+
+.about-project__container {
+    padding: 0 70px;
+}
+
+.about-project__title {
+    margin: 0;
+    padding: 0 0 23px 0;
+    width: 100%;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    border-bottom: 1px solid #DADADA;
+}
+
+.about-project__diplom {
+    padding: 70px 0 0 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+.about-project__diplom-container {
+    margin: 0;
+    max-width: 550px;
+}
+
+.about-project__diplom-title {
+    margin: 0;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.8px;
+}
+
+.about-project__diplom-subtitle {
+    padding-top: 26px;
+    margin: 0;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.about-project__progress {
+    padding-top: 110px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    width: 100%;
+}
+
+.about-project__progress-title {
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 9px 0;
+}
+
+.about-project__progress-title_color_grey {
+    background-color: #303030;
+    color: #FFF;
+}
+
+.about-project__progress-title_color_green {
+    background-color: #3DDC84;
+    color: #000000;
+}
+
+.about-project__progress-subtitle {
+    padding: 14px 0 110px 0;
+    color: #8B8B8B;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 17px;
+}
+
+
+@media (max-width: 925px) {
+    .about-project {
+        margin-top: 90px;
+    }
+
+    .about-project__container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .about-project__diplom {
+        column-gap: 30px;
+    }
+
+    .about-project__diplom-subtitle {
+        font-size: 12px;
+        line-height: 18px;
+        padding-top: 23px;
+    }
+
+    .about-project__progress {
+        padding-top: 93px;
+    }
+
+    .about-project__progress-subtitle {
+        font-weight: 400;
+        padding-bottom: 92px;
+    }
+}
+
+@media (max-width: 556px) {
+    .about-project {
+        margin-top: 70px;
+    }
+
+    .about-project__container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .about-project__title {
+        font-size: 18px;
+        letter-spacing: -0.72px;
+        padding-bottom: 28px;
+    }
+
+    .about-project__diplom {
+        row-gap: 57px;
+        grid-template-columns: 1fr;
+        padding-top: 62px;
+    }
+
+    .about-project__diplom-container {
+        max-width: none;
+    }
+
+    .about-project__diplom-title {
+        font-size: 18px;
+        letter-spacing: -0.72px;
+    }
+
+    .about-project__diplom-subtitle {
+        font-size: 11px;
+        line-height: 16px;
+        padding-top: 17px;
+    }
+
+    .about-project__progress {
+        grid-template-columns: 35% 65%;
+    }
+
+    .about-project__progress {
+        padding-top: 60px;
+    }
+
+    .about-project__progress-title {
+        padding-top: 11px;
+        padding-bottom: 8px;
+        font-size: 11px;
+    }
+
+    .about-project__progress-subtitle {
+        font-size: 11px;
+        padding-top: 10px;
+        padding-bottom: 69px;
+    }
+}

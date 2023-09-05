@@ -1,0 +1,145 @@
+.navigation {
+    display: flex;
+    align-items: center;
+}
+
+.navigation_type_outside {
+    grid-column-start: 3;
+    justify-self: end;
+    align-self: center;
+}
+
+.navigation__links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navigation_type_inside {
+    grid-column-start: 3;
+    justify-self: end;
+    align-self: center;
+}
+
+.navigation__link {
+    list-style: none;
+}
+
+.navigation__link:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.navigation__link:not(:first-child) {
+    padding: 0 0 0 30px;
+}
+
+.navigation__link-signup {
+    color: #FFF;
+    text-align: right;
+    font-family: "Inter";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+}
+
+.navigation__link-signin {
+    color: black;
+    padding: 8px 20px;
+    background-color: rgba(61, 220, 132, 1);
+    border-radius: 3px;
+    text-decoration: none;
+    font-family: "Inter";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    display: block;
+}
+
+.navigation_type_page {
+    margin: 0 auto;
+}
+
+.navigation__menu {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navigation__menu-item {
+    list-style: none;
+}
+
+.navigation__menu-item:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.navigation__menu-item:not(:first-child) {
+    padding: 0 0 0 16px;
+}
+
+.navigation__menu-link {
+    color: #FFF;
+    text-align: right;
+    font-family: "Inter";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    text-decoration: none;
+}
+
+.navigation__menu-link_active {
+    font-weight: 500;
+}
+
+.navigation__link-account {
+    color: #FFF;
+    text-align: center;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    background-color: rgba(49, 49, 49, 1);
+    border-radius: 20px;
+    padding: 8px 20px;
+    text-decoration: none;
+}
+
+@media (max-width: 925px) {
+    .navigation_type_page {
+        display: none;
+    }
+
+    .navigation_type_inside {
+        display: none;
+    }
+
+    .navigation__links_active {
+        display: flex;
+    }
+}
+
+@media (max-width: 556px) {
+    .navigation__link-signup {
+        font-size: 10px;
+    }
+
+    .navigation__link-signin {
+        color: black;
+        padding: 7px 12px;
+        font-size: 10px;
+    }
+
+    .navigation__link:not(:first-child) {
+        padding-left: 14px;
+    }
+}

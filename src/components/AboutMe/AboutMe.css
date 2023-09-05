@@ -1,0 +1,193 @@
+.about-me__container {
+    padding: 110px 70px 0 70px;
+}
+
+.about-me__title {
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.88px;
+    border-bottom: 1px solid #DADADA;
+    margin: 0;
+    padding-bottom: 23px;
+}
+
+.about-me__student {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-me__info {
+    padding-top: 66px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.about-me__name {
+    margin: 0;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -2px;
+}
+
+.about-me__description {
+    margin: 0;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding-top: 18px;
+}
+
+.about-me__history {
+    margin: 0;
+    padding-top: 26px;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.about-me__links {
+    margin: 0;
+    padding: 99px 0 0 0;
+    display: flex;
+
+}
+
+.about-me__links-item {
+    list-style: none;
+}
+
+.about-me__links-item:hover {
+    opacity: .7;
+    cursor: pointer;
+}
+
+.about-me__links-item:not(:first-child) {
+    padding-left: 10px;
+}
+
+.about-me__link {
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.about-me__photo {
+    margin-left: 50px;
+    padding-top: 66px;
+    object-fit: cover;
+    width: 270px;
+    height: 327px;
+    border-radius: 10px;
+}
+
+@media (max-width: 925px) {
+    .about-me__container {
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 90px;
+    }
+
+    .about-me__info {
+        max-width: 364px;
+    }
+
+    .about-me__name {
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.6px;
+    }
+
+    .about-me__description {
+        font-size: 12px;
+        line-height: 18px;
+        padding-top: 16px;
+    }
+
+    .about-me__history {
+        padding-top: 20px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .about-me__links {
+        padding-top: 87px;
+    }
+
+    .about-me__photo {
+        width: 255px;
+        height: 307px;
+    }
+}
+
+@media (max-width: 556px) {
+    .about-me__container {
+        padding-left: 14px;
+        padding-right: 14px;
+        padding-top: 70px;
+    }
+
+    .about-me__title {
+        font-size: 18px;
+        letter-spacing: -0.72px;
+        padding-bottom: 28px;
+    }
+
+    .about-me__student {
+        flex-direction: column-reverse;
+    }
+
+    .about-me__info {
+        max-width: none;
+        padding-top: 40px;
+    }
+
+    .about-me__name {
+        font-size: 30px;
+        line-height: normal;
+        letter-spacing: -1.2px;
+    }
+
+    .about-me__description {
+        font-size: 11px;
+        line-height: 16px;
+        padding-top: 20px;
+    }
+
+    .about-me__history {
+        font-size: 11px;
+        line-height: 16px;
+    }
+
+    .about-me__links {
+        padding-top: 40px;
+    }
+
+    .about-me__photo {
+        width: 292px;
+        height: 352px;
+        margin-left: 0;
+        margin-right: auto;
+        padding-top: 60px;
+
+    }
+}

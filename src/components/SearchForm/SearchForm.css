@@ -1,0 +1,62 @@
+.search-form {
+    padding: 78px 70px 39px 70px;
+    margin-bottom: 9px;
+    border-bottom: 1px solid #424242;
+}
+
+.search-form__input {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search-form__input-text {
+    width: 100%;
+    background-color: #2F2F2F;
+    border-radius: 8px;
+    padding: 16px 20px;
+    border: 0;
+    color: white;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: "Inter";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.search-form__submit-btn {
+    padding: 0;
+    background-image: url("../../images/find-3.svg");
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    flex-shrink: 0;
+}
+
+.search-form__submit-btn:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+@media (max-width: 925px) {
+    .search-form {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 556px) {
+    .search-form {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+
+    .search-form__input-text {
+        padding: 13px;
+    }
+}

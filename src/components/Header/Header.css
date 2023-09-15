@@ -1,0 +1,26 @@
+.header {
+    display: grid;
+    padding: 18px 70px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+}
+
+.header__logo:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+@media (max-width: 925px) {
+    .header {
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width: 556px) {
+    .header {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+}

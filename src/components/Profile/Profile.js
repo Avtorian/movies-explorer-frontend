@@ -5,7 +5,7 @@ import { CurrentUserContext } from '../../contexts/CurrentUserContext';
 import FormValidator from "../../utils/FormValidator";
 export default function Profile(props) {
     const currentUser = React.useContext(CurrentUserContext);
-    const { values, handleChange, errors, isValid, resetForm } = FormValidator();
+    const { values, handleChange, errors, isValid } = FormValidator();
     const [isEdit, setisEdit] = React.useState(false);
     const [isReadonly, setIsReadonly] = React.useState(true);
     const [isChange, setIsChange] = React.useState(false);
@@ -28,7 +28,6 @@ export default function Profile(props) {
         const name = values.profileName;
         const email = values.profileMail;
         props.onEditProfile({name, email});
-        resetForm();              
     }
 
     React.useEffect(()=>{

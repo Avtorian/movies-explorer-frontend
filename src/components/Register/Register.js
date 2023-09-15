@@ -4,14 +4,13 @@ import { Link } from 'react-router-dom';
 import './Register.css';
 import FormValidator from "../../utils/FormValidator";
 export default function Register(props) {
-    const { values, handleChange, errors, isValid, resetForm } = FormValidator();
+    const { values, handleChange, errors, isValid } = FormValidator();
     function handleSubmit(e) {
         e.preventDefault();
         const email = values.registerMail;
         const password = values.registerPass;
         const name = values.registerName;
         props.onRegister({ password, email, name });
-        resetForm();
     }
     return (
         <main>

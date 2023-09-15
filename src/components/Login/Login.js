@@ -4,13 +4,12 @@ import { Link } from 'react-router-dom';
 import './Login.css';
 import FormValidator from "../../utils/FormValidator";
 export default function Login(props) {
-    const { values, handleChange, errors, isValid, resetForm } = FormValidator();
+    const { values, handleChange, errors, isValid } = FormValidator();
     function handleSubmit(e) {
         e.preventDefault();
         const email = values.loginMail;
         const password = values.loginPass;
         props.onLogin({password, email});
-        resetForm();
     }
     return (
         <main>

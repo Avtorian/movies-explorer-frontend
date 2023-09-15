@@ -1,0 +1,29 @@
+.search-error {
+    display: block;
+    padding: 20px 70px 0 70px;
+    margin: 0 auto;
+}
+
+.search-error__info {
+    margin: 0;
+    text-align: center;
+    color: #EE3465;
+    font-family: "Inter";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+@media (max-width: 925px) {
+    .search-error {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 556px) {
+    .search-error {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+}
